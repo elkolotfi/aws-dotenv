@@ -1,0 +1,38 @@
+{
+  "name": "@elko/aws-dotenv",
+  "version": "0.0.1",
+  "description": "Fetch secrets from aws secrets manager and load them as environment variables",
+  "main": "dist/index.js",
+  "bin": {
+    "aws-dotenv": "bin/aws-dotenv"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elkolotfi/aws-dotenv.git"
+  },
+  "keywords": [
+    "aws",
+    "dotenv"
+  ],
+  "author": "elkolotfi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elkolotfi/aws-dotenv/issues"
+  },
+  "homepage": "https://github.com/elkolotfi/aws-dotenv#readme",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.693.0",
+    "zod": "^3.23.8"
+  }
+}
